@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wendy Bottomley for Plymouth City Council</title>
+<meta name="description" content="Wendy Bottomley, Plymouth City Council. Keep Plymouth Moving Forward. Vote Tuesday, November 3.">
+<meta property="og:title" content="Wendy Bottomley for Plymouth City Council">
+<meta property="og:description" content="Keep Plymouth Moving Forward. Vote Tuesday, November 3.">
+<meta property="og:image" content="images/wendy-bottomley.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #1d3473;
+    --red: #c4222f;
+    --cream: #faf8f3;
+    --ink: #1a1f2e;
+    --muted: #4a5163;
+    --line: #dcd8cf;
+  }
+  * { box-sizing: border-box; }
+  html { font-size: 20px; } /* large base size for easy reading */
+  body {
+    margin: 0;
+    background: var(--cream);
+    color: var(--ink);
+    font-family: "Libre Baskerville", Georgia, serif;
+    line-height: 1.7;
+  }
+  img { max-width: 100%; display: block; }
+  a { color: var(--navy); }
+  a:focus-visible { outline: 3px solid var(--red); outline-offset: 3px; }
+  .wrap { max-width: 1040px; margin: 0 auto; padding: 0 24px; }
+  .label {
+    font-family: "Archivo Black", Arial, sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--red);
+    margin: 0 0 0.6rem;
+  }
+  h1, h2, h3 { font-weight: 700; line-height: 1.2; margin: 0 0 1rem; }
+  h2 { font-size: 2rem; color: var(--navy); }
+  h3 { font-size: 1.15rem; color: var(--navy); margin-bottom: 0.4rem; }
+  section { padding: 72px 0; }
+
+  /* Hero */
+  .hero { background: var(--navy); color: #fff; padding: 0; border-bottom: 10px solid var(--red); }
+  .hero .wrap { display: grid; grid-template-columns: 1fr 1.15fr; gap: 48px; align-items: center; padding-top: 48px; padding-bottom: 48px; }
+  .hero img { border: 6px solid #fff; border-radius: 4px; width: 100%; max-height: 640px; object-fit: cover; object-position: top; }
+  .hero .label { color: #fff; }
+  .hero .label::before { content: "★ "; }
+  .hero h1 { font-size: 4rem; margin-bottom: 0.5rem; }
+  .hero .rule { width: 64px; height: 5px; background: var(--red); margin: 0 0 1.2rem; }
+  .hero .tagline { font-style: italic; font-size: 1.5rem; margin: 0 0 1.8rem; }
+  .hero .office {
+    font-family: "Archivo Black", Arial, sans-serif;
+    font-size: 1rem; letter-spacing: 0.08em; text-transform: uppercase;
+    display: inline-block; background: var(--red); padding: 12px 20px; margin: 0;
+  }
+
+  /* Vote banner */
+  .vote { background: #fff; border-bottom: 1px solid var(--line); padding: 36px 0; text-align: center; }
+  .vote p { margin: 0; }
+  .vote .big { font-family: "Archivo Black", Arial, sans-serif; font-size: 2rem; color: var(--navy); }
+  .vote .sub { font-size: 1.2rem; margin-top: 0.3rem; }
+  .vote .sub strong { color: var(--red); }
+
+  /* Quote */
+  .quote { text-align: center; padding: 64px 0; }
+  .quote blockquote { margin: 0 auto; max-width: 820px; font-size: 1.6rem; font-style: italic; color: var(--navy); line-height: 1.5; }
+  .quote cite { display: block; margin-top: 1rem; font-style: normal; font-size: 1rem; color: var(--muted); }
+
+  /* About */
+  .about { background: #fff; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+  .about .wrap { max-width: 820px; }
+  .facts { list-style: none; padding: 0; margin: 2rem 0 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+  .facts li { border-top: 4px solid var(--red); padding-top: 12px; font-size: 0.95rem; }
+  .facts strong { display: block; font-family: "Archivo Black", Arial, sans-serif; font-weight: 400; font-size: 0.75rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }
+
+  /* Record */
+  .record { background: var(--navy); color: #fff; }
+  .record h2, .record h3 { color: #fff; }
+  .record .label { color: #f2b8bd; }
+  .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 2rem; }
+  .cards div { border-left: 5px solid var(--red); padding: 4px 0 4px 20px; }
+  .cards p { margin: 0; }
+
+  /* Priorities */
+  .priorities ol { list-style: none; padding: 0; margin: 2rem 0 0; }
+  .priorities li { display: grid; grid-template-columns: 72px 1fr; gap: 16px; padding: 20px 0; border-bottom: 1px solid var(--line); }
+  .priorities li:last-child { border-bottom: 0; }
+  .num { font-family: "Archivo Black", Arial, sans-serif; font-size: 2rem; color: var(--red); line-height: 1.1; }
+  .priorities p { margin: 0; }
+
+  /* Why */
+  .why { background: #fff; border-top: 1px solid var(--line); }
+  .why .wrap { max-width: 820px; }
+  .why .sign { font-style: italic; font-size: 1.3rem; color: var(--navy); }
+
+  /* Election day */
+  .election { background: var(--red); color: #fff; text-align: center; }
+  .election h2 { color: #fff; font-size: 2.6rem; }
+  .election .label { color: #fff; }
+  .election p { font-size: 1.2rem; max-width: 720px; margin: 0 auto 1rem; }
+  .election .two { font-family: "Archivo Black", Arial, sans-serif; font-size: 1.5rem; margin-top: 1.5rem; }
+  .election a { color: #fff; font-weight: 700; }
+
+  footer { background: var(--ink); color: #d6d8de; text-align: center; padding: 32px 0; font-size: 0.85rem; }
+  footer p { margin: 0.3rem 0; }
+  .paid { border: 1px solid #6b7183; display: inline-block; padding: 6px 14px; }
+
+  @media (max-width: 800px) {
+    html { font-size: 18px; }
+    .hero .wrap { grid-template-columns: 1fr; gap: 28px; padding-top: 24px; }
+    .hero img { max-height: 520px; }
+    .hero h1 { font-size: 3rem; }
+    .facts, .cards { grid-template-columns: 1fr; }
+    section { padding: 52px 0; }
+    .quote blockquote { font-size: 1.3rem; }
+    .wrap { padding: 0 16px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <img src="images/wendy-bottomley.jpg" alt="Wendy Bottomley, smiling, wearing a black shirt" width="800" height="1306">
+    <div>
+      <p class="label">Elect Incumbent</p>
+      <h1>Wendy Bottomley</h1>
+      <div class="rule"></div>
+      <p class="tagline">Keep Plymouth Moving Forward</p>
+      <p class="office">Plymouth City Council</p>
+    </div>
+  </div>
+</header>
+
+<div class="vote">
+  <div class="wrap">
+    <p class="big">Vote Tuesday, November 3</p>
+    <p class="sub">You get two votes. <strong>Make Wendy one of them.</strong></p>
+  </div>
+</div>
+
+<section class="quote">
+  <div class="wrap">
+    <blockquote>“I’m not a politician. I’m a Plymouth resident who cares deeply about this community and wants to do my part to make it better.”</blockquote>
+    <cite>— Wendy Bottomley</cite>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="wrap">
+    <p class="label">Meet Wendy</p>
+    <h2>A neighbor, not a politician.</h2>
+    <p>Wendy Bottomley was appointed to the Plymouth City Council in August 2025. She believes the council works best as a team. No one member makes decisions alone or takes credit for the good work that happens in our city.</p>
+    <p>She also serves as a Commissioner on the Amador County Transportation Commission. Her background in corporate finance gives her the experience to read a budget, plan for the long term and manage public money carefully.</p>
+    <ul class="facts">
+      <li><strong>On the council</strong>Since August 2025</li>
+      <li><strong>Also serves</strong>Amador County Transportation Commission</li>
+      <li><strong>Background</strong>Corporate finance and budget planning</li>
+    </ul>
+  </div>
+</section>
+
+<section class="record" id="record">
+  <div class="wrap">
+    <p class="label">The Record</p>
+    <h2>Results since joining the council</h2>
+    <div class="cards">
+      <div>
+        <h3>Stronger city finances</h3>
+        <p>Part of a council that put Plymouth on firmer financial footing.</p>
+      </div>
+      <div>
+        <h3>Old Sacramento Road</h3>
+        <p>Helped move long-needed repairs closer to reality through the County Transportation Commission, after years of talk.</p>
+      </div>
+      <div>
+        <h3>Infrastructure investment</h3>
+        <p>Supported improvements to roads and city services that keep Plymouth moving.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="priorities" id="priorities">
+  <div class="wrap">
+    <p class="label">Priorities</p>
+    <h2>Responsible leadership for Plymouth</h2>
+    <ol>
+      <li><span class="num">01</span><div><h3>Careful spending</h3><p>Treat every tax dollar with respect, with sound financial management.</p></div></li>
+      <li><span class="num">02</span><div><h3>Open government</h3><p>Clear communication so residents know their local government is listening.</p></div></li>
+      <li><span class="num">03</span><div><h3>Roads and services</h3><p>Steady investment in infrastructure while keeping the city financially stable.</p></div></li>
+      <li><span class="num">04</span><div><h3>Plymouth’s character</h3><p>Welcome new opportunities while protecting the safety, quality of life and small-town feel that make Plymouth special.</p></div></li>
+      <li><span class="num">05</span><div><h3>Working together</h3><p>Keep residents informed and involved, and work with fellow council members and city staff on practical solutions.</p></div></li>
+    </ol>
+  </div>
+</section>
+
+<section class="why" id="why">
+  <div class="wrap">
+    <p class="label">Why I’m Running</p>
+    <h2>In Wendy’s words</h2>
+    <p>“I joined the council because I wanted to bring positive, helpful and common-sense decision making to local government.</p>
+    <p>The issues most important to Plymouth are the same issues I hear about from residents: transparent government, responsible spending of taxpayer dollars, and making decisions that benefit the community as a whole. As we continue to grow, we need to balance new opportunities with preserving the character, safety and quality of life that residents value.</p>
+    <p>Most importantly, I will continue working with fellow council members, city staff and residents to find practical solutions that benefit Plymouth.</p>
+    <p>I’d be honored to keep serving you.”</p>
+    <p class="sign">— Wendy</p>
+  </div>
+</section>
+
+<section class="election" id="vote">
+  <div class="wrap">
+    <p class="label">Election Day</p>
+    <h2>Tuesday, November 3</h2>
+    <p>Plymouth voters choose two City Council members this year.</p>
+    <p class="two">Pick two. Make Wendy one of them.</p>
+    <p>Not sure if you’re registered? Check at <a href="https://registertovote.ca.gov">registertovote.ca.gov</a></p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p class="paid">Paid for by [Committee name] · FPPC ID #[000000]</p>
+  </div>
+</footer>
+
+</body>
+</html>
