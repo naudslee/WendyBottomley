@@ -135,7 +135,8 @@
     html { font-size: 16px; }
     /* Keep the whole top block on one phone screen */
     .hero .wrap { grid-template-columns: 1fr; gap: 16px; padding-top: 16px; padding-bottom: 24px; }
-    .hero img { height: 44vh; max-height: 360px; object-position: 50% 12%; }
+    /* photo takes whatever is left of the screen after the text block (~312px) */
+    .hero img { height: calc(100svh - 312px); min-height: 300px; max-height: 520px; object-position: 50% 12%; }
     .hero h1 { font-size: 2.6rem; margin-bottom: 0.3rem; }
     .hero .rule { margin-bottom: 0.7rem; }
     .hero .tagline { font-size: 1.25rem; margin-bottom: 1rem; }
