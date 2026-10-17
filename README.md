@@ -22,3 +22,9 @@ wendy@wendyforplymouth.com. Reply to messages from that inbox. The free plan all
 50 messages a month.
 
 To change which address receives messages, or to see past submissions, sign in at formspree.io.
+
+## Visitor statistics
+
+Visits are counted by [GoatCounter](https://www.goatcounter.com) (free, no cookies).
+The dashboard is at https://wendyforplymouth.goatcounter.com (log in with wendy@wendyforplymouth.com).
+It shows visits over time, where visitors came from, and phone vs. computer.
